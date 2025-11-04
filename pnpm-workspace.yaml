@@ -1,0 +1,5 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "move"
+  - "tools/*"     # include scraper workspace

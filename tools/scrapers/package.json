@@ -1,0 +1,17 @@
+{
+  "name": "@repeasy/scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "scrape:projects": "ts-node src/giverep_scrape_projects.ts",
+    "scrape:nfts": "ts-node src/giverep_scrape_NFT.ts",
+    "scrape:all": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}

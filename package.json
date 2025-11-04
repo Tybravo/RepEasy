@@ -1,4 +1,8 @@
 {
+	"scripts": {
+    "scrape:giverep-project": "pnpm --filter @repeasy/scraper run scrape:projects",
+	"scrape:giverep-nft": "pnpm --filter @repeasy/scraper run scrape:nfts"
+  },
 	"devDependencies": {
 		"@types/node": "^24.7.1"
 	}
