@@ -2,8 +2,7 @@
 
 # RepEasy 🐳
 
-RepEasy is a decentralized reputation generation platform that empowers users to amplify projects hosted on GiveRep
- through AI-powered tweet threads and social sharing tools.
+RepEasy is a decentralized reputation generation platform that empowers users to amplify projects hosted on GiveRep through AI-powered tweet threads and social sharing tools.
 
 Built on the SUI blockchain with Walrus decentralized storage, Move smart contracts, and a modern React/Vite frontend, RepEasy enables individuals and project owners to create, schedule, and share awareness campaigns across Twitter (X) and Discord — turning project promotion into an effortless, automated experience.
 
