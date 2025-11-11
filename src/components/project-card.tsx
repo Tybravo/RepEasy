@@ -9,7 +9,7 @@ interface ProjectCardProps {
 }
 
 
-export default function ProjectCard({ name, icon, banner, onClick }: ProjectCardProps) {
+export default function ProjectCard({ name, icon, banner, twitterUsername, onClick }: ProjectCardProps) {
   return (
     <motion.div
   whileHover={{ scale: 1.03, y: -4 }}
@@ -39,8 +39,8 @@ export default function ProjectCard({ name, icon, banner, onClick }: ProjectCard
         <img src={icon} alt={name} className="h-full w-full object-cover" />
       </div>
       <div className="min-w-0">
-        {/* <h3 className="font-semibold text-primary-foreground text-sm sm:text-base truncate">{name}</h3> */}
-        {/* <p className="text-xs sm:text-sm text-primary-foreground/70 truncate">@{twitterUsername}</p> */}
+         <h3 className="font-semibold text-primary-foreground text-sm sm:text-base truncate">{name}</h3> 
+         <p className="text-xs sm:text-sm text-primary-foreground/70 truncate">@{twitterUsername}</p>
       </div>
     {/* </div> */}
     </motion.div>
