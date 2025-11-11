@@ -144,7 +144,6 @@
 
 
 
-import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Copy } from "lucide-react";
 import { Button } from "../components/ui/button";

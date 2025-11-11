@@ -9,7 +9,7 @@ interface ProjectCardProps {
 }
 
 
-export default function ProjectCard({ name, icon, banner, twitterUsername, onClick }: ProjectCardProps) {
+export default function ProjectCard({ name, icon, banner,  onClick }: ProjectCardProps) {
   return (
     <motion.div
   whileHover={{ scale: 1.03, y: -4 }}
