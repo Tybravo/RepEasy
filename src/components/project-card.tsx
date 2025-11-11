@@ -40,7 +40,7 @@ export default function ProjectCard({ name, icon, banner, twitterUsername, onCli
       </div>
       <div className="min-w-0">
          <h3 className="font-semibold text-primary-foreground text-sm sm:text-base truncate">{name}</h3> 
-         <p className="text-xs sm:text-sm text-primary-foreground/70 truncate">@{twitterUsername}</p>
+         {/* <p className="text-xs sm:text-sm text-primary-foreground/70 truncate">@{twitterUsername}</p> */}
       </div>
     {/* </div> */}
     </motion.div>
