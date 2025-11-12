@@ -145,7 +145,7 @@ export default function HomePage() {
           </a>
 
           <p className="mx-auto mb-8 max-w-lg text-gray-300 leading-relaxed text-sm sm:text-base">
-            ⚡ A lightning-fast{" "}
+            A lightning-fast{" "}
             <span className="text-blue-400 font-semibold">
               AI-powered post generator
             </span>{" "}
@@ -158,7 +158,7 @@ export default function HomePage() {
             <Search className="h-5 w-5 text-gray-300" />
             <input
               type="text"
-              placeholder="🔍 Search for a SUI project..."
+              placeholder=" Search for a SUI project..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="flex-1 bg-transparent outline-none text-gray-100 placeholder-gray-400 text-sm sm:text-base"
@@ -182,7 +182,7 @@ export default function HomePage() {
           className="text-center text-lg sm:text-xl md:text-3xl font-semibold mb-10 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           // className="text-center text-2xl md:text-3xl font-semibold mb-10 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
         >
-          🚀 Explore Trending SUI Projects
+          Explore Trending SUI Projects
         </motion.h2>
 
         <ProjectCarousel
