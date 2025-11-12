@@ -1,89 +1,3 @@
-// import { useState, useEffect } from "react"
-// import { AnimatePresence ,motion } from "framer-motion"
-// import { Search, Settings } from "lucide-react"
-// import ProjectCarousel from "./project-carousel"
-// import ProjectModal from "./project-modal"
-// import projects from "../data/giverep_projects.json"
-
-// export default function HomePage() {
-//   const [searchQuery, setSearchQuery] = useState("")
-//   const [selectedProject, setSelectedProject] = useState<any>(null)
-//   const [filteredProjects, setFilteredProjects] = useState(projects);
-
-//    useEffect(() => {
-//     const query = searchQuery.toLowerCase().trim()
-//     if (query === "") {
-//       setFilteredProjects(projects)
-//     } else {
-//       const results = projects.filter((p) =>
-//         p.name.toLowerCase().includes(query)
-//       )
-//       setFilteredProjects(results)
-//     }
-//   }, [searchQuery])
-
-//   return (
-//     <main className="min-h-screen bg-white">
-
-//        {/* border-b-4 border-blue-400  */}
-//       <section className=" bg-gradient-to-b from-white to-blue-50 px-4 py-8 sm:px-6 md:px-8 md:py-12 lg:py-16 text-center">
-//        <motion.div
-//     initial={{ opacity: 0, y: 30 }}
-//     animate={{ opacity: 1, y: 0 }}
-//     transition={{ duration: 0.8, ease: "easeOut" }}
-//   > <a href="/">
-//         <div className="mb-6 flex justify-center items-center space-x-3">
-
-//           <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500 text-white">
-//             <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
-//               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-//             </svg>
-//           </div>
-//           <h1 className=" text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">RepEasy</h1>
-//         </div>
-//         </a>
-
-//         <p className="mx-auto mb-8 max-w-md text-sm sm:text-base text-gray-600">
-//            A fast and seamless X (Twitter) post generator for all projects built on the{" "}
-//             <span className="text-blue-600 font-semibold">SUI ecosystem</span>.
-
-//         </p>
-
-//         <div className="mx-auto flex max-w-md items-center gap-2 rounded-lg bg-white px-4 py-3 shadow-sm">
-
-//           <Search className="h-5 w-5 text-gray-400" />
-
-//           <input
-//             type="text"
-//             placeholder="Search for a sui project ..."
-//             value={searchQuery}
-//             onChange={(e) => setSearchQuery(e.target.value)}
-//             className="flex-1 bg-transparent outline-none text-gray-600 placeholder-gray-400 text-sm sm:text-base"
-//           />
-//           <Settings className="h-5 w-5 text-gray-400" />
-//         </div>
-//         </motion.div>
-//       </section>
-
-//       {/* border-b-4 border-blue-400 */}
-//       <section className=" px-4 py-8 sm:px-6 md:px-8 md:py-12">
-
-//         <ProjectCarousel  projects={filteredProjects} onProjectClick={setSelectedProject} />
-//       </section>
-//       <AnimatePresence>
-//         {selectedProject && (
-//           <ProjectModal
-//             project={selectedProject}
-//             onClose={() => setSelectedProject(null)}
-//           />
-//         )}
-//       </AnimatePresence>
-//       <h2 className="mb-4 text-center text-sm text-gray-200">
-//       S13
-//       </h2>
-//     </main>
-//   )
-// }
 
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -91,6 +5,7 @@ import { Search, Settings } from "lucide-react";
 import ProjectCarousel from "./project-carousel";
 import ProjectModal from "./project-modal";
 import projects from "../data/giverep_projects.json";
+import image from "../assets/Gemini_Generated_Image_x27hd3x27hd3x27h.png"
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -121,12 +36,15 @@ export default function HomePage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <a href="/" className="inline-flex items-center space-x-3 mb-6">
-            <motion.div
+             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
-              className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-400 shadow-[0_0_20px_rgba(56,189,248,0.6)]"
-            >
-              <svg
+              // className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-400 shadow-[0_0_20px_rgba(56,189,248,0.6)]"
+            > 
+            
+            <img src={image} alt="RepEasy Logo" className="h-14 w-14 rounded-2xl" />
+           
+              {/* <svg
                 className="h-8 w-8 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -137,8 +55,8 @@ export default function HomePage() {
                   c-4.41 0-8-3.59-8-8s3.59-8 8-8
                   8 3.59 8 8-3.59 8-8 8z"
                 />
-              </svg>
-            </motion.div>
+              </svg> */}
+            </motion.div> 
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-cyan-400 to-cyan-400">
               RepEasy
             </h1>
